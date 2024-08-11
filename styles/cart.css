@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 90vw;
+    max-width: 100%;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+
+/* header css*/
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh; 
+}
+
+.logo {
+    font-size: 2rem; 
+    color: #9E3040;
+}
+
+.cart-icon{
+    display:flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 10px;
+    border-radius: 3px;
+    width: auto;
+}
+
+.cart-icon i{
+    color: #9E3040;
+    font-size: 40px;
+}
+
+.cart-icon p{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: #9E3040;
+    color: white;
+}
+
+/* cart section css*/
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+.root {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.sidebar {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 0;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.head {
+    background-color: #9E3040;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+
+.box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.img-box{
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-out{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #9E3040;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.check-out a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.images{
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+}
+
+.bottom h2{
+    font-size: 1.25rem;
+    color: #232323; 
+}
+
+button{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #9E3040;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.cart-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #9E3040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowimg{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.fa-trash:hover{
+    cursor: pointer;
+    color: #9E3040;
+}
+
+/* footer section*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background: #F3F5F6;
+    padding: 20px 50px;
+}
+
+.media-link{
+    width: 250px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 17px;
+}
+
+.contact-info{
+    width: 295px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.social-media i{
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+footer h6{
+    font-size: 30px;
+}

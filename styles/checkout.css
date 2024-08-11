@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* checkout section css */
+.checkout-container {
+    width: 90%;
+    max-width: 1440px;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+
+.cart-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.cart-steps .circle {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border: 2px solid #9E3040;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-steps hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #9E3040;
+}
+
+.checkout-section,
+.payment-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.left-column h2,
+.right-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.left-column form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #000;
+}
+
+form .name-section,
+.address-info,
+.input-fields {
+    display: flex;
+    gap: 20px;
+}
+
+form .name-field,
+form .address-field,
+form .info-item,
+form .card-number-field,
+form .input-fields input,
+form .input-fields select,
+form .checkbox-section {
+    flex: 1;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form .button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9E3040;
+    color: white;
+    cursor: pointer;
+}
+
+.place-order-button {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    background-color: #9E3040;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.place-order-button:hover {
+    background-color: #85192b;
+}
+
+.right-column h3 {
+    margin-bottom: 10px;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
