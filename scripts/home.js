@@ -141,6 +141,24 @@ displayProductCategories();
 
 
 
+document.getElementById('search-icon').addEventListener('click', function() {
+    const searchForm = document.getElementById('search-form');
+    searchForm.style.display = searchForm.style.display === 'block' ? 'none' : 'block';
+});
+
+document.getElementById('search-button').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value;
+    if (query) {
+        localStorage.setItem('searchQuery', query);
+
+        window.location.href = './pages/product.html';
+    } else {
+        alert('Please enter a search term.');
+    }
+});
+
+
+
 
 
 

@@ -37,6 +37,13 @@
 
         <!--header section-->
         <header>
+
+            <div class="hamburger">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+
             <div class="navbar">
                 <div class="logo">
                     <h2>LOGO</h2>
@@ -51,16 +58,16 @@
                 </div>
             </div>
 
-            <div class="hamburger">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </div>
 
             <div class="cart-icon">
-                <i class="fa fa-search"></i>
+                <i class="fa fa-search" id="search-icon"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
                 <p class="cart-count">0</p>
+            </div>
+
+            <div class="search-form" id="search-form">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button"><i class="fa fa-search"></i></button>
             </div>
 
         </header>

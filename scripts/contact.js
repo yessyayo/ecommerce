@@ -43,3 +43,50 @@ function displayCartItems(cartData) {
     totalElement.innerHTML = `<p>Order Total:</p><h4>$${totalAmount.toFixed(2)}</h4>`;
     orderSummary.appendChild(totalElement);
 }
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const shippingForm = document.getElementById('shipping-form');
+    const cancelButton = document.querySelector('.cancel-button');
+    const saveButton = document.querySelector('.save-button');
+    
+   
+    saveButton.disabled = true;
+
+    
+    function checkFormValidity() {
+        let isValid = true;
+        const requiredFields = shippingForm.querySelectorAll('input[required]');
+
+        requiredFields.forEach(function (field) {
+            if (!field.value.trim()) {
+                isValid = false;
+            }
+        });
+
+        saveButton.disabled = !isValid; 
+    }
+
+    shippingForm.addEventListener('input', checkFormValidity);
+
+    cancelButton.addEventListener('click', function () {
+        shippingForm.reset(); 
+        saveButton.disabled = true; 
+    });
+
+    saveButton.addEventListener('click', function (event) {
+        event.preventDefault(); 
+        if (!saveButton.disabled) {
+            alert('Address saved successfully!');
+            shippingForm.reset(); 
+            saveButton.disabled = true; 
+        }
+    });
+});

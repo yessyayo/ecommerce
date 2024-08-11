@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 56px;
+    height: auto;
     background-color: #F6F6F6;
 }
 
@@ -48,7 +48,7 @@ header{
     display: flex;
     gap:100px ;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 
 }
 .navbar {
@@ -109,6 +109,33 @@ header{
     background-color: #9E3040;
     color: white;
 }
+
+.search-form {
+    display: none;
+    position: absolute;
+    top: 3.125rem; 
+    left: 18.75rem; 
+    background-color: #fff;
+    padding: 0.625rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.3125rem; 
+    z-index: 1000;
+}
+
+.search-form input {
+    padding: 0.3125rem; 
+    font-size: 1rem; 
+    width: 5rem; 
+}
+
+.search-form button {
+    padding: 0.3125rem 0.625rem; 
+    font-size: 1rem; 
+    cursor: pointer;
+}
+
+
+
 
 /* Hero section css*/
 .hero-section {
@@ -421,28 +448,19 @@ footer h6{
 
 
 @media (max-width: 768px) {
-     
-    header{
-        gap:20px ;
-    
-    
-    }
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 10vh; 
-    }
 
+    header{
+        gap: 20px;
+    }
     .nav ul {
         display: none;
         flex-direction: column;
-        width: 768px;
+        width: 425px;
         background-color: #9E3040;
         position: absolute;
         top: 60px;
         left: 0;
+        margin-top: 70px;
     }
 
     .nav ul.active {
@@ -450,8 +468,9 @@ footer h6{
     }
 
     .hamburger {
-        display: inline;
+        display: block;
     }
+    
 
     .hero-text{
     width: 100%;
@@ -489,6 +508,11 @@ footer h6{
 
 
 @media (max-width: 425px) {
+
+    .nav ul {
+        width: 300px;
+        margin-top: 120px;
+    }
     
     .product-catalog{
         width: 350px;
@@ -502,6 +526,24 @@ footer h6{
         width: 250px;
         height:250px ;
         border-radius: 10px;
+    }
+
+    .search-form {
+        top: 170px; 
+        left: 70px; 
+
+    }
+    
+    .search-form input {
+        padding: 0.3125rem; 
+        font-size: 1rem; 
+        width: 100px; 
+    }
+    
+    .search-form button {
+        padding:0; 
+        font-size: 1rem; 
+        cursor: pointer;
     }
     
 }

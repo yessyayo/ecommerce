@@ -75,3 +75,9 @@ document.querySelector(".category-links").addEventListener("click", function(eve
     }
 });
 getProducts();
+
+
+
+
+
+
